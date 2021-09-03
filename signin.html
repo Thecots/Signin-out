@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+
+    <section>
+        <div class="signBox">
+            <span class="loadBar"><span></span></span>
+            <h1>Iniciar sessión</h1>
+            <div class="inputBox">
+                <form id="formIn" onsubmit="return false">
+                    <div class="text-field" id="username">
+                        <input type="text" required autocomplete="off" autofocus > 
+                        <label class="label">Nombre de usuario</label>
+                    </div>
+                    <span id="sessionErrorUsername"></span>        
+                    <div class="text-field" id="password"> <!-- class => error -->
+                        <input id="passwd1" type="password" required autocomplete="off" name="password">
+                        <label class="label">Contraseña</label>
+                    </div>
+                    <div class="text-field" id="confirm" style="display: none;">
+                        <input id="passwd2" type="password" required autocomplete="off" name="password">
+                    </div>
+                    <span id="sessionError" class="spanError"></span>
+                    <div class="showPassword">
+                        <input type="checkbox" id="showPassword" onclick="showPasword()">
+                        <label for="showPassword" > Mostrar contraseña</label>
+                    </div>
+                    <div class="btn-box">
+                        <button type="button" onclick="createAccount()">Crear cuenta</button><button onclick="iniciarSession()">Iniciar sessión</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="sign.js"></script>
+</body>
+</html>
