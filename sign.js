@@ -16,6 +16,8 @@ function setloadbar(e){
     }
 }
 
+setloadbar(false);
+
 /* Aparece/desaparece texto de error -> in */
 function error(type,e,t){
     if(type == "password" && e == true){
@@ -49,7 +51,6 @@ function iniciarSession(){
         }
         return 0;
     }
-   
     var obj = {username: u, password:p};
     let tojson = JSON.stringify(obj);
 }
@@ -78,7 +79,6 @@ function crearCuenta(){
     restartErrors();
     let elements = document.getElementById("formIn").elements;
     let u = elements.item(0).value, p = elements.item(1).value, c = elements.item(2).value;
-   
         if(u == ''){
             error("username",true,'Campos vacios');
             usernameInput.classList.add('error');
@@ -101,8 +101,6 @@ function crearCuenta(){
             }
             return 0;
         }
-        
-   
     var obj = {username: u, password:p};
     let tojson = JSON.stringify(obj);
 }
@@ -117,4 +115,3 @@ function showPasword(){
         document.getElementById('passwd2').type = 'password';
     }
 }
-

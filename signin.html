@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="sign.css">
 </head>
 <body>
-
     <section>
         <div class="signBox">
-            <span class="loadBar"><span></span></span>
             <h1>Iniciar sessión</h1>
             <div class="inputBox">
+                <span class="loadBar"><span></span></span>
                 <form id="formIn" onsubmit="return false">
                     <div class="text-field" id="username">
                         <input type="text" required autocomplete="off" autofocus > 
                         <label class="label">Nombre de usuario</label>
                     </div>
                     <span id="sessionErrorUsername"></span>        
-                    <div class="text-field" id="password"> <!-- class => error -->
+                    <div class="text-field" id="password">
                         <input id="passwd1" type="password" required autocomplete="off" name="password">
                         <label class="label">Contraseña</label>
                     </div>
