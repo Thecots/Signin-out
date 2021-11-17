@@ -29,7 +29,6 @@ section{
     padding: .625rem;
 }
 
-
 /* ----- sign box -----*/
 .signBox{
     position: sticky;
@@ -135,6 +134,7 @@ section{
 /* ----- text-field box ----- */
 .inputBox{
     width: 100%;
+    overflow-x: none;
 }
 .inputBox form{
     height: auto;
@@ -182,7 +182,7 @@ section{
     border: thin solid var(--c-error);
 }
 .text-field.error input:focus, .text-field.error textarea:focus {
-        box-shadow:  0 0 0 .125rem var(--c-error);
+    box-shadow:  0 0 0 .125rem var(--c-error);
 }
 .text-field.error .label, .text-field.error input:focus ~ .label,
 .text-field.error textarea:focus ~ .label{
