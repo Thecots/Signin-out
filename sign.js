@@ -13,6 +13,7 @@ const userHaveAccount = () =>{
 function setloadbar(e){
     loadBar.style.display = e == true ? "flex" : "none"
 }
+setloadbar(false);
 /* ---- toggle on/off error text ---- */
 function error(type,e,t){
     if(type == "password" && e == true){
